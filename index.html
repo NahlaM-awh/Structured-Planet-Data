@@ -1,0 +1,155 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Planet Info Table | Nahla</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Ubuntu&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Ubuntu', sans-serif;
+      background: url('https://images.unsplash.com/photo-1570421051234-8e8b12b1d201?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      backdrop-filter: blur(5px);
+      padding: 40px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: gray;
+ }h1 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2.5rem;
+  color: #00ffff;
+  margin-bottom: 30px;
+  text-shadow: 0 0 15px #207474;
+}
+
+.planet-table {
+  width: 95%;
+  max-width: 1100px;
+  border-collapse: collapse;
+  border-radius: 12px;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+}
+
+.planet-table th, .planet-table td {
+  padding: 16px;
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.planet-table th {
+  background-color: rgba(0, 255, 255, 0.15);
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: white;
+}
+
+.planet-table tr:hover {
+  background-color: rgba(0, 255, 255, 0.15);
+  transition: background 0.3s ease;
+}
+
+.planet-table img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 8px cyan;
+}
+
+@media (max-width: 768px) {
+  .planet-table th, .planet-table td {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+}
+  </style>
+</head>
+<body>
+  <h1>🌠 Planet Data Table></h1>
+  <table class="planet-table">
+    <thead>
+      <tr>
+        <th>Planet</th>
+        <th>Image</th>
+        <th>Diameter (km)</th>
+        <th>Distance from Sun (million km)</th>
+        <th>Moons</th>
+        <th>Rings</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Mercury</td>
+        <td><img src="https://th.bing.com/th/id/OIP._YlpEwFyZ-cr_tIqlXBuPgHaHa?w=191&h=191" alt="Mercury"></td>
+        <td>4,879</td>
+        <td>58</td>
+        <td>0</td>
+        <td>❌</td>
+      </tr>
+      <tr>
+        <td>Venus</td>
+        <td><img src="https://th.bing.com/th/id/OIP.DcLn9ex94CAq5UcB5UfFwQHaHa?w=191&h=191" alt="Venus"></td>
+        <td>12,104</td>
+        <td>108</td>
+        <td>0</td>
+        <td>❌</td>
+      </tr>
+      <tr>
+        <td>Earth</td>
+        <td><img src="https://th.bing.com/th/id/OIP.GhNZskV75N5-qYxRLPTeywHaHl?w=141&h=180" alt="Earth"></td>
+        <td>12,742</td>
+        <td>150</td>
+        <td>1</td>
+        <td>❌</td>
+      </tr>
+      <tr>
+        <td>Mars</td>
+        <td><img src="https://th.bing.com/th/id/OIP.dcRWjuaTTZrKIle3qFU3owHaHa?w=160&h=180" alt="Mars"></td>
+        <td>6,779</td>
+        <td>228</td>
+        <td>2</td>
+        <td>❌</td>
+      </tr>
+      <tr>
+        <td>Jupiter</td>
+        <td><img src="https://th.bing.com/th/id/OIP.jL2nZXeTxBs5XFd3cWSzZgHaG7?w=212&h=199" alt="Jupiter"></td>
+        <td>139,820</td>
+        <td>778</td>
+        <td>95</td>
+        <td>✅</td>
+      </tr>
+      <tr>
+        <td>Saturn</td>
+        <td><img src="https://th.bing.com/th/id/OIP.8rmJnBWJxwcFqVQPPm463gHaFL?w=258&h=180" alt="Saturn"></td>
+        <td>116,460</td>
+        <td>1,429</td>
+        <td>146</td>
+        <td>✅</td>
+      </tr>
+      <tr>
+        <td>Uranus</td>
+        <td><img src="https://tse4.mm.bing.net/th/id/OIP.mvbm07UycddNXabA-vxeEAHaHZ?rs=1&pid=ImgDetMain" alt="Uranus"></td>
+        <td>50,724</td>
+        <td>2,871</td>
+        <td>28</td>
+        <td>✅</td>
+      </tr>
+      <tr>
+        <td>Neptune</td>
+        <td><img src="https://th.bing.com/th/id/OIP.JxFZ6F1B8XNh4WpFcT1LpgHaHa?w=512&h=512" alt="Neptune"></td>
+        <td>49,244</td>
+        <td>4,498</td>
+        <td>16</td>
+        <td>✅</td>
+      </tr>
+    </tbody>
+    </table>
+<caption>📊 Data Source: NASA Planetary Factsheet • Created by NAHLA M</caption>
+</body>
+</html>
